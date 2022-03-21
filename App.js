@@ -1,5 +1,3 @@
-//React Router,Reach
-// import Video from "./Video";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import SearchArea from "./SearchArea";
@@ -19,41 +17,9 @@ const App = () => {
                     <SearchArea path="/" />
                     <WatchArea path="/watch/:id" />
                 </Router>
-                {/* <Video
-                    title="How To Build YoutubeClone"
-                dateAdded="1 days ago"
-                Channel="Programming Channel"
-                />
-                <Video
-                    title="Resident evil 7 walk Through"
-                    dateAdded="2 days ago"
-                    Channel="Gaming Channel"
-                />
-                <Video
-                    title="Evil Twin Attack"
-                    dateAdded="5 days ago"
-                    Channel="LearnEthicalHacking"
-                /> */}
+              
             </div>
         </ColorContext.Provider>
     )
-    // return React.createElement("div", { }, [
-    //     React.createElement("h1", { }, "BeeTube"),
-    //     React.createElement(Video, {
-    //         title: "How To Build YoutubeClone",
-    //         dateAdded: "1 days ago",
-    //         Channel: "Programming Channel"
-    //     }),
-    //     React.createElement(Video, {
-    //         title: "Resident evil 7 walk Through",
-    //         dateAdded: "2 days ago",
-    //         Channel: "Gaming Channel"
-    //     }),
-    //     React.createElement(Video, {
-    //         title: "Evil Twin Attack",
-    //         dateAdded: "5 days ago",
-    //         Channel: "LearnEthicalHacking"
-    //     })
-    // ]);
 }
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
