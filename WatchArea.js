@@ -6,7 +6,7 @@ import ErrorBoundary from "./ErrorBoundary";
 import ColorContext from "./ColorContext";
 import Model from "./Model";
 
-// what u mean React.Component(its goonna get some inheritance from React.Component)
+// what u mean React.Component(its gonna get some inheritance from React.Component)
 class WatchArea extends React.Component {
     constructor() {
         super();
@@ -16,7 +16,7 @@ class WatchArea extends React.Component {
         };
     }
 
-    componentDidMount() { //best place to write Api
+    componentDidMount() { 
         axios.get(`${AppConstant.VIDEO__URL}&id=${this.props.id}`)
             .then((res) => {
                 const item = res.data.items[0];
